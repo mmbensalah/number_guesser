@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="guess.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="guess.js"></script>
+    <title></title>
+  </head>
+  <body>
+    <div class="headers">
+      <h1 class="number">Number</h1>
+      <h1 class="guesser">Guesser</h1>
+    </div>
+    <form>
+      <input type="text" class="minRange" value="Min"><br>
+      <input type="text" class="maxRange" value="Max"><br>
+      <input type="submit" value="Submit" class="button" id="minMaxBtn">
+    </form>
+    <p class="test"></p>
+    <form>
+      <input type="text" class="guessField" value="Enter your guess"><br>
+      <input type="submit" value="Guess" class="button" id="guessSubmit">
+      <input type="submit" value="Clear" class="button" id="guessClear">
+      <input type="submit" value="Reset" class="button" id="reset">
+    </form>
+    <p class="message">Your last guess was:</p>
+    <p class="lastGuess"></p>
+    <p class="highLow"></p>
+  </body>
+</html>
