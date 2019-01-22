@@ -13,6 +13,8 @@
 
 $( document ).ready(function() {
   var randomNumber;
+  var min;
+  var max;
   $("#minMaxBtn").click(function() {
     let min = parseInt($(".minRange").val());
     let max = parseInt($(".maxRange").val());
@@ -23,7 +25,7 @@ $( document ).ready(function() {
     const checkGuess = (userGuess) => {
       if (isNaN(userGuess)) {
         alert("Not a number, try again");
-      } else if(randomNumber < userGuess || userGuess < 0) {
+      } else if(userGuess < min || userGuess > max) {
         alert("Number out of range, try again");
       } else if(userGuess > randomNumber) {
         event.preventDefault();
