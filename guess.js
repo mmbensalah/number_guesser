@@ -9,9 +9,15 @@
 
 
 
-let randomNumber = Math.floor(Math.random() * 10)
+// let randomNumber = Math.floor(Math.random() * 10)
 
 $( document ).ready(function() {
+  var randomNumber;
+  $("#minMaxBtn").click(function() {
+    let min = parseInt($(".minRange").val());
+    let max = parseInt($(".maxRange").val());
+    randomNumber = Math.floor(Math.random() * (max - min) + min);
+  });
   $("#guessSubmit").click(function() {
     let userGuess = parseInt($(".guessField").val());
     const checkGuess = (userGuess) => {
@@ -55,13 +61,3 @@ $( document ).ready(function() {
     });
   });
 });
-
-// $("#minMaxBtn").click(function() {
-//   let min = parseInt($(".minRange").val());
-//   let max = parseInt($(".maxRange").val());
-//   return numRange(min,max)
-// });
-
-// const numRange = (min,max) => {
-//   return Math.floor(Math.random() * (max - min) + min);
-// };
