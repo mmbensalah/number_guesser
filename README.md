@@ -1,5 +1,7 @@
 # number_guesser
 
-NumberGuesser
+#H1 NumberGuesser
 
 Deployed version: <https://mmbensalah.github.io/number_guesser/>
+
+#H2 Objective
