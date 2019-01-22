@@ -23,7 +23,7 @@ $( document ).ready(function() {
     const checkGuess = (userGuess) => {
       if (isNaN(userGuess)) {
         alert("Not a number, try again");
-      } else if(11 < userGuess || userGuess < 0) {
+      } else if(randomNumber < userGuess || userGuess < 0) {
         alert("Number out of range, try again");
       } else if(userGuess > randomNumber) {
         event.preventDefault();
